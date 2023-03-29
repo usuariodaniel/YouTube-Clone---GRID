@@ -18,7 +18,6 @@ body {
     "aside main main main"
     "aside main main main"
     "aside main main main";
-  /* justify-content: space-between; */
 }
 
 header {
@@ -42,8 +41,6 @@ main {
     "main-item-1 main-item-2 main-item-3 main-item-4"
     "main-item-5 main-item-6 main-item-7 main-item-8"
     "main-item-9 main-item-10 main-item-11 main-item-12";
-  /* flex-direction: row;
-  justify-content: space-evenly; */
 }
 
 header .container {
