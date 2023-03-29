@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 250px 550px 550px 550px;
+  grid-template-rows: 100px 310px 310px 310px;
+  grid-template-areas:
+    "header header header header"
+    "aside main main main"
+    "aside main main main"
+    "aside main main main";
+  /* justify-content: space-between; */
+}
+
+header {
+  background-color: #ffffff;
+  grid-area: header;
+  display: grid;
+}
+
+aside {
+  background-color: #ffffff;
+  grid-area: aside;
+}
+
+main {
+  background-color: #faf8f8;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas:
+    "main-item-1 main-item-2 main-item-3 main-item-4"
+    "main-item-5 main-item-6 main-item-7 main-item-8"
+    "main-item-9 main-item-10 main-item-11 main-item-12";
+  /* flex-direction: row;
+  justify-content: space-evenly; */
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.search-box {
+  position: relative;
+  left: 285px;
+  transform: translate(-50%);
+  background: #ffffff;
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+  width: 600px;
+  height: 30px;
+  border: 1px solid #cecece;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box a {
+  position: absolute;
+  left: 545px;
+  padding: 19px;
+  border: 1px solid #cecece;
+  background: #e6e6e6;
+  width: 55px;
+  height: 11px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.loupe-white {
+  position: absolute;
+  bottom: 7px;
+  left: 13px;
+  width: 20px;
+  height: 20px;
+}
+
+.search-text {
+  background: none;
+  border: 0;
+  outline: 0;
+  width: 570px;
+
+  font-size: 16px;
+}
+
+.img-right .usuario {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.img-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: 45px;
+}
+
+.img-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  gap: 45px;
+  cursor: pointer;
+}
+
+#right1 {
+  width: 24px;
+  height: 24px;
+}
+
+#right2 {
+  width: 24px;
+  height: 24px;
+}
+
+aside .side-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+aside .side-bar img {
+  width: 22px;
+  height: 22px;
+  margin: 7px;
+}
+
+aside .side-bar .side-text-1 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-2 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-3 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-4 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-5 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-6 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-7 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-8 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-9 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+aside .side-bar .side-text-10 {
+  position: relative;
+  left: 40px;
+  bottom: 27px;
+  font-family: "Roboto";
+}
+
+main .main-item-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-3 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-4 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-5 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-6 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-7 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-8 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-9 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-10 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-11 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-12 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  font-family: "Roboto";
+}
+
+main .main-item-1 p {
+  position: relative;
+  width: 200px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-2 p {
+  position: relative;
+  width: 190px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+
+main .main-item-3 p {
+  position: relative;
+  width: 230px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+
+main .main-item-4 p {
+  position: relative;
+  width: 190px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+
+main .main-item-5 p {
+  position: relative;
+  width: 230px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-6 p {
+  position: relative;
+  width: 200px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-7 p {
+  position: relative;
+  width: 190px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-8 p {
+  position: relative;
+  width: 230px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-9 p {
+  position: relative;
+  width: 190px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-10 p {
+  position: relative;
+  width: 230px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-11 p {
+  position: relative;
+  width: 200px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+main .main-item-12 p {
+  position: relative;
+  width: 190px;
+  left: 50px;
+  margin: 15px;
+  bottom: 60px;
+}
+
+#cover-img {
+  width: 280px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+#logo-img {
+  width: 50px;
+  height: 50px;
+}
